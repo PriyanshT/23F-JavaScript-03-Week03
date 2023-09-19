@@ -34,5 +34,5 @@ for(let i = 0; i < productArray.length; i++){
     productBody.appendChild(tableTr);
     // STEP 10: Set the total cost of the invoice as the textContent of the TD in the 
     //TFOOT (var totalData), rounding the number to two decimal places
-    finalPrice.textContent = "$" + invoiceTotal;
+    finalPrice.textContent = "$" + invoiceTotal.toFixed(2);
 }
