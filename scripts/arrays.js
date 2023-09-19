@@ -36,11 +36,16 @@ console.log(stringFromArray2);
 Without the ability to edit the contents of an array, this type of variable would have limited use - but adding and removing array items is pretty straightforward */
 
 // Adding one or more items to an array with push()
-
+var pushArray = newArray.push("newValue"); // this will return the length of array
+output.textContent = pushArray;
 // Removing an item from an array with pop()
-
+var popArray = newArray.pop(); // this will retured the removed element value
+output.textContent = popArray;
 // pop() returns the item that was removed, rather than the length of the updated array
 
 // To do the same thing, that is, to add and remove an item from the beginning of the array, use shift() and unshift()
-
+var shiftArray = newArray.shift(); // this will retured the removed element value, but from left side
+output.textContent = shiftArray;
+var unshiftArray = newArray.unshift("newValueShifted"); // this will return the length after adding
+output.textContent = unshiftArray; 
 /* That's it for the basics of working with arrays! With these tools at your disposal, a whole new world of possibilities with JavaScript are at your command */
